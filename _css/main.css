@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+width: 100%;
+margin: 0 auto;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+nav{
+    margin-top: -125px;
+    display: flex;
+    height: 85px;
+    position: right;
+}
+  nav ul{
+    margin-top: -30;
+    margin-left: 450px;
+    position: absolute;
+  }
+  nav ul li{
+    display: inline-block;
+    
+  }
+  nav ul li a{
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 0 25px;
+    line-height: 70px;
+    font-size: 15px;
+    font-family:'Consolas';
+    background: white;
+    transition: 0.5s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: rgb(0, 0, 0);
+  }
+  nav ul ul{
+    list-style: none;
+    position: center;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0px;
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: left;
+    border-top: none;
+    
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: left;
+    top: -70px;
+    left: 100px;
+  }
+  nav ul ul li a i{
+    margin-right: 50px;
+  }
